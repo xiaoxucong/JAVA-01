@@ -18,26 +18,6 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
     <modules>
-        <module>xiao-project-common</module>
-        <module>xiao-project-web</module>
-        <module>xiao-project-api</module>
-        <module>xiao-project-shardingsphere</module>
-        <module>xiao-project-websocket</module>
-        <module>xiao-project-spring</module>
-        <module>xiao-project-manage</module>
-        <module>xiao-project-user</module>
-        <module>xiao-project-redis</module>
-        <module>xiao-project-redis-single</module>
-        <module>xiao-project-mongodb</module>
-        <module>xiao-project-elasticsearch</module>
-        <module>xiao-project-rabbitmq</module>
-        <module>xiao-netty</module>
-        <module>xiao-project-fastdfs</module>
-        <module>xiao-project-manage-dubbo</module>
-        <module>xiao-project-dubbo</module>
-        <module>xiao-project-manage-cas</module>
-        <module>xiao-Concurrent</module>
-        <module>xiao-myGateway</module>
         <module>xiao-spring</module>
         <module>xiao-spring-boot</module>
     </modules>
