@@ -9,6 +9,8 @@ import xiao.springboot.pojo.School;
 
 @RestController
 public class WrapController {
+	
+	
     @Autowired
     private xiao.springboot.pojo.Klass klass;
     @Autowired
