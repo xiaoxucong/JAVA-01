@@ -12,9 +12,7 @@ public class JdbcTest {
      `age` int(11) DEFAULT NULL,
      `gender` varchar(255) DEFAULT NULL
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-     * @param args
-     * @throws SQLException
+ 
      */
     public static void main(String[] args) throws SQLException {
         String driverClassName = "com.mysql.jdbc.Driver";	//启动驱动
