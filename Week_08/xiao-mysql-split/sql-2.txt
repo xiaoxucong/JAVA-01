@@ -1,0 +1,339 @@
+
+
+-- ----------------------------
+-- Table structure for order_16
+-- ----------------------------
+DROP TABLE IF EXISTS `order_16`;
+CREATE TABLE `order_16` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_17
+-- ----------------------------
+DROP TABLE IF EXISTS `order_17`;
+CREATE TABLE `order_17` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_18
+-- ----------------------------
+DROP TABLE IF EXISTS `order_18`;
+CREATE TABLE `order_18` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_19
+-- ----------------------------
+DROP TABLE IF EXISTS `order_19`;
+CREATE TABLE `order_19` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_20
+-- ----------------------------
+DROP TABLE IF EXISTS `order_20`;
+CREATE TABLE `order_20` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_21
+-- ----------------------------
+DROP TABLE IF EXISTS `order_21`;
+CREATE TABLE `order_21` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_22
+-- ----------------------------
+DROP TABLE IF EXISTS `order_22`;
+CREATE TABLE `order_22` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_23
+-- ----------------------------
+DROP TABLE IF EXISTS `order_23`;
+CREATE TABLE `order_23` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_24
+-- ----------------------------
+DROP TABLE IF EXISTS `order_24`;
+CREATE TABLE `order_24` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_25
+-- ----------------------------
+DROP TABLE IF EXISTS `order_25`;
+CREATE TABLE `order_25` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_26
+-- ----------------------------
+DROP TABLE IF EXISTS `order_26`;
+CREATE TABLE `order_26` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_27
+-- ----------------------------
+DROP TABLE IF EXISTS `order_27`;
+CREATE TABLE `order_27` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_28
+-- ----------------------------
+DROP TABLE IF EXISTS `order_28`;
+CREATE TABLE `order_28` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_29
+-- ----------------------------
+DROP TABLE IF EXISTS `order_29`;
+CREATE TABLE `order_29` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_30
+-- ----------------------------
+DROP TABLE IF EXISTS `order_30`;
+CREATE TABLE `order_30` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+-- ----------------------------
+-- Table structure for order_31
+-- ----------------------------
+DROP TABLE IF EXISTS `order_31`;
+CREATE TABLE `order_31` (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `userId` bigint DEFAULT NULL COMMENT '用户id',
+  `order_no` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `sum_price` decimal(10,2) DEFAULT NULL COMMENT '总价格',
+  `createtime` datetime DEFAULT NULL COMMENT '创建时间',
+  `paymenttime` datetime DEFAULT NULL COMMENT '支付时间',
+  `order_status` int DEFAULT '1' COMMENT '订单状态 0 取消  1 未支付  ,2 已支付未发快递  3 已发快递 4 已收货  5退款退货',
+  `express_no` varchar(255) DEFAULT NULL COMMENT '快递编号',
+  `express_name` varchar(255) DEFAULT NULL COMMENT '快递名称',
+  `consignee_address` varchar(255) DEFAULT NULL COMMENT '收货人地址',
+  `consignee_mobile` varchar(255) DEFAULT NULL COMMENT '收货人手机号',
+  `consignee_name` varchar(255) DEFAULT NULL COMMENT '收货人姓名',
+  `deleteStatus` bit(1) DEFAULT b'0' COMMENT '是否删除',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
+
+

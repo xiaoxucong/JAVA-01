@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xiao.split.mapper.TestMapper">
+
+	  <select id="findAll" resultType="map" >
+          select * from t1
+      </select>
+
+    <insert id="add" parameterType="map" >
+        INSERT INTO  order_#{temp}  (userId, `order_no`, `sum_price`, `createtime`, `paymenttime`, `order_status`, `express_no`, `express_name`, `consignee_address`, `consignee_mobile`, `consignee_name`, `deleteStatus`) VALUES
+             (#{userId}, 'order_no1',  '1.00', '2021-03-03 09:38:53', '2021-03-03 09:39:13', 1, '1', '1', '1', '1', '1', 0)
+
+    </insert>
+
+    <select id="findOrderByOne" parameterType="map" resultType="map" >
+        select * from (
+          select id,userId,0 type,order_no from order_0 union
+           select id,userId,1 type,order_no from order_1 union
+           select id,userId,2 type,order_no from order_2 union
+           select id,userId,3 type,order_no from order_3 union
+           select id,userId,4 type,order_no from order_4 union
+           select id,userId,5 type,order_no from order_5 union
+           select id,userId,6 type,order_no from order_6 union
+           select id,userId,7 type,order_no from order_7 union
+            select id,userId,8 type,order_no from order_8 union
+           select id,userId,9 type,order_no from order_9 union
+           select id,userId,10 type,order_no from order_10 union
+           select id,userId,11 type,order_no from order_11 union
+           select id,userId,12 type,order_no from order_12 union
+           select id,userId,13 type,order_no from order_13 union
+           select id,userId,14 type,order_no from order_14 union
+           select id,userId,15 type,order_no from order_15  ) a
+           where userId=#{userId} and id= #{id} limit 1
+      </select>
+    <select id="findOrderByTwo" parameterType="map" resultType="map" >
+        select * from (
+          select id,userId,16 type,order_no from order_16 union
+           select id,userId,17 type,order_no from order_17 union
+           select id,userId,18 type,order_no from order_18 union
+           select id,userId,19 type,order_no from order_19 union
+           select id,userId,20 type,order_no from order_20 union
+           select id,userId,21 type,order_no from order_21 union
+           select id,userId,22 type,order_no from order_22 union
+           select id,userId,23 type,order_no from order_23 union
+            select id,userId,24 type,order_no from order_24 union
+           select id,userId,25 type ,order_no from order_25 union
+           select id,userId,26 type,order_no from order_26 union
+           select id,userId,27 type,order_no from order_27 union
+           select id,userId,28 type,order_no from order_28 union
+           select id,userId,29 type,order_no from order_29 union
+           select id,userId,30 type,order_no from order_30 union
+           select id,userId,31 type,order_no from order_31  ) a
+           where userId=#{userId} and id= #{id} limit 1
+      </select>
+
+    <update id="update" parameterType="map" >
+       update order_#{type}  set `order_no`=#{order_no} where userId=#{userId} and id= #{id}
+
+    </update>
+</mapper>
+
