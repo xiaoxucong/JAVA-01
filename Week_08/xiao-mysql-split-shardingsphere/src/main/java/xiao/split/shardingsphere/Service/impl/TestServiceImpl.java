@@ -21,7 +21,7 @@ public class TestServiceImpl implements TestService {
     @Override
     public void add(Long userId) {
         Map<String, Object> param = new HashMap<>();
-        param.put("userId",userId);
+        param.put("user_id",userId);
         testMapper.addsd(param);
 
     }

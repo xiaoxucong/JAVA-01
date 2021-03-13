@@ -32,7 +32,7 @@ public class TestController {
     public Map<String,Object> select(@RequestParam("userId") Long userId,@RequestParam("id") Long id) {
 
         Map<String,Object> param = new HashMap<>();
-        param.put("userId",userId);
+        param.put("user_id",userId);
         param.put("id",id);
         Map<String,Object>  result = this.testService.findOrder(param);
         return result;
@@ -41,7 +41,7 @@ public class TestController {
     @GetMapping("edit")
     public String edit(@RequestParam("userId") Long userId,@RequestParam("id") Long id,@RequestParam("order_no") String order_no) {
         Map<String,Object> param = new HashMap<>();
-        param.put("userId",userId);
+        param.put("user_id",userId);
         param.put("id",id);
         Map<String,Object>  result = this.testService.findOrder(param);
         if(result != null && result.size()> 0) {
