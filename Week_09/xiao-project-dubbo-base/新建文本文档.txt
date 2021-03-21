@@ -1,0 +1,9 @@
+/findA   --查询A的信息
+/findB   --查询B的信息
+
+
+/addMoneyA/${money}   //设置A的金额
+
+/addMoneyB/${money}   //设置B的金额
+
+/testAToB/${money}  // A转钱给B
