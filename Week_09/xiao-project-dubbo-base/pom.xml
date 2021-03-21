@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+     <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.4.RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>xiao</groupId>
+    <version>1.0-SNAPSHOT</version>
+    <artifactId>xiao-project-dubbo-base</artifactId>
+    <packaging>pom</packaging>
+
+    <name>xiao-project-dubbo-base</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+    <modules>
+        <module>xiao-project-dubbo-base-service</module>
+        <module>xiao-project-dubbo-base-web</module>
+        <module>xiao-project-api</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dubbo.version>2.7.5</dubbo.version>
+        <protostuff.version>1.5.9</protostuff.version>
+		<java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--依赖包版本-->
+        <version>1.0-SNAPSHOT</version>
+        <spring-boot.version>2.1.7.RELEASE</spring-boot.version>
+
+        <logback.version>1.2.3</logback.version>
+
+        <!-- plugin version -->
+        <maven-war-plugin.version>2.6</maven-war-plugin.version>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+        <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+        <build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
+        <tomcat7-maven-plugin.version>2.3-SNAPSHOT</tomcat7-maven-plugin.version>
+
+        <!-- 必须在此定义elasticsearch.version,
+        否则会被org/springframework/boot/spring-boot-dependencies/2.1.1.RELEASE/spring-boot-dependencies-2.1.1.RELEASE.pom
+        中定义的elasticsearch.version=6.4.3覆盖，导致引入com.soonchina#microweb-elasticsearch-api中使用到错误的变量值 -->
+        <elasticsearch.version>5.4.1</elasticsearch.version>
+        <hmily.version>2.1.1</hmily.version>
+    </properties>
+
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <finalName>xiao-project-dubbo-base</finalName>
+
+    </build>
+</project>
